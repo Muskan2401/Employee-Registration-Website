@@ -1,0 +1,37 @@
+   <div class="heading" style="margin-top:-19px;">
+    <h3 style="position: relative; top: 8px;">UPDATE FORM</h3>
+    </div>
+  <div style="display: flex; align-items: center; justify-content: center; margin-top:20px;" >
+        <form id="myForm">
+          <label class="required"> Name:</label><input type="text" placeholder="Enter name" id="updatedname${listing.Mobileno}"  required/>  
+  
+          <label class="required"> Age:</label><input type="number" placeholder="Enter age" id="updatedage${listing.Mobileno}"  required/>
+        
+  
+          <label class="required">Salary:</label><input type="number" placeholder="Enter salary" id="updatedsalary${listing.Mobileno}" required/>
+  
+          <label class="required">DOB:</label><input type="date" id="updateddob${listing.Mobileno}" required/>
+        
+  
+          <div class="mb-5">
+            <label class="required">Gender:</label>  
+            <input type="radio" id="Male${listing.Mobileno}" name="updatedgender${listing.Mobileno}" value="Male" required>
+            <label for="Male${listing.Mobileno}">Male</label>
+            <input type="radio" id="Female${listing.Mobileno}" name="updatedgender${listing.Mobileno}" value="Female" required>
+            <label for="Female${listing.Mobileno}">Female</label> 
+            
+  
+            </div>
+          <button type="button" onclick="updateListing('${listing.Mobileno}')">Update</button>
+          <span class="error-message" id="error${listing.Mobileno}">Please enter the fields</span>
+          <div id="loader-overlay" class="center"></div>
+          <div id="loader" class="center" style="display: none;"></div>
+    
+        </form>
+    </div>
+    <div id="success" class="alert alert-success" style="display:none;">
+  <strong><span class="glyphicon glyphicon-ok"></span>   Success! Record Updated </strong>
+</div>
+<div id="failure" class="alert alert-danger" style="display:none;">
+  <strong><span class="glyphicon glyphicon-remove"></span>   Record can't be updated</strong> 
+</div>

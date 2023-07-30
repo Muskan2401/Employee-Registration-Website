@@ -1,0 +1,161 @@
+body{
+    background-color: aliceblue;
+  }
+  .heading{
+    background-color: #4CAF50;
+    height:50px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom:4px;
+  }
+  form {
+      display: inline-block;
+      max-width: 441px;
+      margin-bottom: 20px;
+  }
+    .mb-3{
+      display:inline-block;
+      padding:10px;
+      max-width: 200px;
+    }
+    .mb-4{
+      display:inline-block;
+      padding:10px;
+      max-width: 200px;
+    }
+    .mb-5 {
+        float: left;
+        clear: none;
+        margin-top: 16px;
+      }
+      
+      .mb-5 label {
+        float: left;
+        clear: none;
+        display: block;
+        padding: 0px 1em 0px 12px;
+      }
+      
+      input[type=radio],
+      input.radio {
+        float: left;
+        clear: none;
+        margin: 4px 0 0 2px; 
+        border-radius: 24px;
+        width: 20px;
+        height: 20px;
+      }
+   
+    input[type="text"],input[type="number"],input[type="date"] {
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .error-message {
+        color: red;
+        font-size: small;
+      }
+  
+    
+    button[type="button"] {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    
+    button[type="button"]:hover {
+      background-color: darkcyan;
+    }
+  
+    
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+  
+    
+    #listing-container {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    
+    th {
+      background-color: #f2f2f2;
+      padding: 8px;
+      text-align: center;
+    }
+  
+    
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+    }
+    tr:hover{
+      background-color: aquamarine;
+    }
+        .listing {
+          background-color: #f2f2f2;
+          padding: 5px;
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .modal-header {
+              background: #45a049;
+              color: #fff;
+          }
+          
+          .required:after {
+              content: "*";
+              color: red;
+          }
+          #loader-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: 9999; 
+      display: none; 
+  }
+          #loader {
+              border: 12px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 12px solid #444444;
+              width: 70px;
+              height: 70px;
+              animation: spin 1s linear infinite;
+              z-index: 10000;
+          }
+   
+          @keyframes spin {
+              100% {
+                  transform: rotate(360deg);
+              }
+          }
+   
+          .center {
+              position:fixed;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+          }
